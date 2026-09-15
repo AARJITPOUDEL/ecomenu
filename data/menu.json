@@ -1,0 +1,678 @@
+{
+  "restaurant": {
+    "name": "Annapurna Eco Lodge Resort",
+    "tagline": "Where hospitality comes naturally",
+    "logo": "assets/logo.svg",
+    "currency": "Rs",
+    "hours": "Kitchen open daily",
+    "address": "Machhapuchhre - 6, Astam, Kaski, Nepal",
+    "phones": [
+      "9856028829",
+      "9846027354",
+      "9856029364"
+    ],
+    "footerNote": "All prices in Nepalese Rupees. Please tell your server about any allergies."
+  },
+  "about": {
+    "lede": "A working farm on the ridge above Pokhara, where the kitchen starts in the garden.",
+    "paragraphs": [
+      "We sit in Astam, a hillside village in Machhapuchhre-6, up in the terraces north-west of Pokhara. The dining terrace looks straight across at Annapurna South, Hiunchuli and the fishtail ridge of Machhapuchhre. On clear mornings the peaks catch the light well before the valley does.",
+      "Most of what reaches your plate grew a short walk from it. Millet and corn for the dhido, greens for the curry, herbs for the tea, milk from the shed below the orchard. What we cannot grow ourselves, we buy from neighbours in the village.",
+      "The lodge is run by people who live here. Everything is cooked to order and nothing waits under a lamp, so dal bhat takes the time dal bhat takes. Tell us what you would rather not eat and we will cook around it."
+    ],
+    "highlights": [
+      {
+        "title": "Grown here",
+        "text": "Vegetables, millet, herbs and milk come from our own land and from families in Astam."
+      },
+      {
+        "title": "Cooked to order",
+        "text": "Allow a little time, especially for dal bhat, dhido and anything from the specials list."
+      },
+      {
+        "title": "Facing the range",
+        "text": "Annapurna South, Hiunchuli and Machhapuchhre sit directly across the valley from the terrace."
+      },
+      {
+        "title": "Beyond the kitchen",
+        "text": "Yoga, meditation, reiki and reflexology can be arranged through reception."
+      }
+    ]
+  },
+  "categories": [
+    {
+      "id": "all",
+      "label": "All"
+    },
+    {
+      "id": "drinks",
+      "label": "Tea & Coffee",
+      "note": "Leaves and herbs from the garden behind the kitchen."
+    },
+    {
+      "id": "breakfast",
+      "label": "Breakfast",
+      "note": "Every breakfast comes with tea or coffee."
+    },
+    {
+      "id": "mains",
+      "label": "Lunch & Dinner",
+      "note": "Cooked to order. Dal bhat and dhido take a little longer."
+    },
+    {
+      "id": "specials",
+      "label": "Today's Specials",
+      "note": "Ask what came out of the garden this morning."
+    },
+    {
+      "id": "beverages",
+      "label": "Cold Drinks & Bar",
+      "note": ""
+    },
+    {
+      "id": "services",
+      "label": "Services",
+      "note": "Arranged through reception, not the kitchen. Ask at the desk.",
+      "orderable": false
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "name": "Black, lemongrass, camomile, mint, ginger or cinnamon tea",
+      "description": "",
+      "price": 70,
+      "category": "drinks",
+      "tags": [
+        "vegan"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Eco tea",
+      "description": "A blend of fresh herbs cut from our garden that morning.",
+      "price": 70,
+      "category": "drinks",
+      "tags": [
+        "vegan"
+      ],
+      "featured": true
+    },
+    {
+      "id": 3,
+      "name": "Milk tea",
+      "description": "",
+      "price": 90,
+      "category": "drinks",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Masala tea",
+      "description": "",
+      "price": 130,
+      "category": "drinks",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Fresh brewed organic coffee",
+      "description": "",
+      "price": 150,
+      "category": "drinks",
+      "tags": [
+        "vegan"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Hot chocolate",
+      "description": "",
+      "price": 150,
+      "category": "drinks",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "A glass of fresh cow milk",
+      "description": "",
+      "price": 130,
+      "category": "drinks",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Special eco-breakfast",
+      "description": "Fried potato with tomato and onion, two eggs any style, eco-pancake, tea or coffee.",
+      "price": 490,
+      "category": "breakfast",
+      "tags": [
+        "popular"
+      ],
+      "featured": true
+    },
+    {
+      "id": 9,
+      "name": "Eco-pancake",
+      "description": "Millet, wheat and egg with honey. Tea or coffee.",
+      "price": 385,
+      "category": "breakfast",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Pancake with honey",
+      "description": "Tea or coffee.",
+      "price": 375,
+      "category": "breakfast",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Local porridge",
+      "description": "Homemade blend of locally grown grains. Tea or coffee.",
+      "price": 385,
+      "category": "breakfast",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Porridge with honey",
+      "description": "Tea or coffee.",
+      "price": 390,
+      "category": "breakfast",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Cornflakes with milk or curd",
+      "description": "Tea or coffee.",
+      "price": 375,
+      "category": "breakfast",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Banana porridge",
+      "description": "Tea or coffee.",
+      "price": 400,
+      "category": "breakfast",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Muesli with milk or curd",
+      "description": "Tea or coffee.",
+      "price": 400,
+      "category": "breakfast",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Fruit muesli with milk or curd",
+      "description": "Tea or coffee.",
+      "price": 450,
+      "category": "breakfast",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Chapati with two eggs, any style",
+      "description": "Tea or coffee.",
+      "price": 390,
+      "category": "breakfast",
+      "tags": []
+    },
+    {
+      "id": 18,
+      "name": "Vegetable omelette",
+      "description": "Tea or coffee.",
+      "price": 320,
+      "category": "breakfast",
+      "tags": []
+    },
+    {
+      "id": 19,
+      "name": "Boiled egg",
+      "description": "Tea or coffee.",
+      "price": 250,
+      "category": "breakfast",
+      "tags": []
+    },
+    {
+      "id": 20,
+      "name": "Nepali dal bhat set, white rice",
+      "description": "White rice, dal, vegetable curry, pickle, papad and salad.",
+      "price": 495,
+      "category": "mains",
+      "tags": [
+        "popular",
+        "vegetarian"
+      ],
+      "featured": true
+    },
+    {
+      "id": 21,
+      "name": "Nepali dal bhat set, local rice",
+      "description": "Local rice, dal, vegetable curry, pickle, papad and salad.",
+      "price": 530,
+      "category": "mains",
+      "tags": [
+        "popular",
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Dhido",
+      "description": "Millet, wheat or corn with dal, vegetable curry, pickle, papad and salad.",
+      "price": 500,
+      "category": "mains",
+      "tags": [
+        "vegetarian"
+      ],
+      "featured": true
+    },
+    {
+      "id": 23,
+      "name": "Vegetable fried noodles or rice",
+      "description": "",
+      "price": 430,
+      "category": "mains",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Homemade vegetable thukpa",
+      "description": "",
+      "price": 415,
+      "category": "mains",
+      "tags": [
+        "vegetarian"
+      ],
+      "featured": true
+    },
+    {
+      "id": 25,
+      "name": "Fried noodles or rice with mixed vegetables, egg and cheese",
+      "description": "",
+      "price": 550,
+      "category": "mains",
+      "tags": []
+    },
+    {
+      "id": 26,
+      "name": "Shakshuka with chapati",
+      "description": "Fresh vegetables, tomato and eggs.",
+      "price": 485,
+      "category": "mains",
+      "tags": []
+    },
+    {
+      "id": 27,
+      "name": "Pasta with special vegetable sauce and cheese",
+      "description": "",
+      "price": 550,
+      "category": "mains",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Vegetable soup with beaten rice and soya bean",
+      "description": "",
+      "price": 420,
+      "category": "mains",
+      "tags": [
+        "vegan"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Aloo paratha with chutney",
+      "description": "Two pieces.",
+      "price": 390,
+      "category": "mains",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Samosa with chutney",
+      "description": "Vegetable, potato, beans and peanut.",
+      "price": 420,
+      "category": "mains",
+      "tags": [
+        "vegan"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Mixed local vegetable curry with chapati or rice",
+      "description": "",
+      "price": 465,
+      "category": "mains",
+      "tags": [
+        "vegan"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Potato rosti with egg",
+      "description": "",
+      "price": 435,
+      "category": "mains",
+      "tags": []
+    },
+    {
+      "id": 33,
+      "name": "Cheese chapati with vegetable curry",
+      "description": "",
+      "price": 495,
+      "category": "mains",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Vegetable wrap with cheese",
+      "description": "",
+      "price": 485,
+      "category": "mains",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Vegetable spring roll",
+      "description": "",
+      "price": 475,
+      "category": "mains",
+      "tags": [
+        "vegan"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Vegetable patty with cheese",
+      "description": "",
+      "price": 420,
+      "category": "mains",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Fried potato with cheese",
+      "description": "",
+      "price": 385,
+      "category": "mains",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Boiled potato",
+      "description": "",
+      "price": 285,
+      "category": "mains",
+      "tags": [
+        "vegan"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Boiled vegetables",
+      "description": "",
+      "price": 285,
+      "category": "mains",
+      "tags": [
+        "vegan"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Seasonal vegetable salad",
+      "description": "",
+      "price": 280,
+      "category": "mains",
+      "tags": [
+        "vegan"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Chicken lollipop",
+      "description": "",
+      "price": 650,
+      "category": "specials",
+      "tags": []
+    },
+    {
+      "id": 42,
+      "name": "Chicken chilli",
+      "description": "",
+      "price": 490,
+      "category": "specials",
+      "tags": [
+        "spicy"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Chicken fry",
+      "description": "",
+      "price": 480,
+      "category": "specials",
+      "tags": []
+    },
+    {
+      "id": 44,
+      "name": "French fries",
+      "description": "",
+      "price": 375,
+      "category": "specials",
+      "tags": [
+        "vegan"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Noodles sadeko",
+      "description": "",
+      "price": 250,
+      "category": "specials",
+      "tags": [
+        "spicy"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Peanut sadeko",
+      "description": "",
+      "price": 300,
+      "category": "specials",
+      "tags": [
+        "spicy",
+        "vegan"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Bhatmas sadeko",
+      "description": "",
+      "price": 250,
+      "category": "specials",
+      "tags": [
+        "spicy",
+        "vegan"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Chicken chow mein",
+      "description": "",
+      "price": 550,
+      "category": "specials",
+      "tags": []
+    },
+    {
+      "id": 49,
+      "name": "Gundruk bhatmas sadeko",
+      "description": "",
+      "price": 300,
+      "category": "specials",
+      "tags": [
+        "spicy",
+        "vegan"
+      ],
+      "featured": true
+    },
+    {
+      "id": 50,
+      "name": "Plain lassi",
+      "description": "",
+      "price": 175,
+      "category": "beverages",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Banana lassi",
+      "description": "",
+      "price": 230,
+      "category": "beverages",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Banana milkshake",
+      "description": "",
+      "price": 230,
+      "category": "beverages",
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Coke, Fanta or Sprite",
+      "description": "",
+      "price": 150,
+      "category": "beverages",
+      "tags": [
+        "vegan"
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Mango juice or mixed juice",
+      "description": "",
+      "price": 185,
+      "category": "beverages",
+      "tags": [
+        "vegan"
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Can beer",
+      "description": "",
+      "price": 650,
+      "category": "beverages",
+      "tags": []
+    },
+    {
+      "id": 56,
+      "name": "Liquor, 30 ml",
+      "description": "Three peg shot.",
+      "price": 115,
+      "category": "beverages",
+      "tags": []
+    },
+    {
+      "id": 57,
+      "name": "Red or white wine",
+      "description": "Per bottle.",
+      "price": 1750,
+      "category": "beverages",
+      "tags": []
+    },
+    {
+      "id": 58,
+      "name": "A bucket of hot water for bathing",
+      "description": "",
+      "price": 550,
+      "category": "services",
+      "tags": []
+    },
+    {
+      "id": 59,
+      "name": "Laundry service",
+      "description": "Per load.",
+      "price": 1000,
+      "category": "services",
+      "tags": []
+    },
+    {
+      "id": 60,
+      "name": "Yoga or meditation",
+      "description": "",
+      "price": 3000,
+      "category": "services",
+      "tags": []
+    },
+    {
+      "id": 61,
+      "name": "Reiki healing",
+      "description": "",
+      "price": 3000,
+      "category": "services",
+      "tags": []
+    },
+    {
+      "id": 62,
+      "name": "Reflexology",
+      "description": "",
+      "price": 4000,
+      "category": "services",
+      "tags": []
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#16291F">
+<meta name="description" content="Menu at Annapurna Eco Lodge Resort, Astam, Kaski. Food grown on the farm, cooked to order.">
+<title>Menu · Annapurna Eco Lodge Resort</title>
+
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="shell">
+
+  <header class="nav">
+    <a class="nav__brand" href="index.html">
+      <img class="nav__logo" src="assets/logo.svg" alt="">
+      <span class="nav__name">Annapurna<br><span class="nav__name-sub">Eco Lodge Resort</span></span>
+    </a>
+    <nav class="nav__links" aria-label="Main">
+      <a href="index.html" aria-current="page">Menu</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p class="hero__place">Astam, Kaski</p>
+    <h1 class="hero__title">The menu</h1>
+    <p class="hero__tagline">Where hospitality comes naturally. Grown on the farm, cooked to order.</p>
+
+    <svg class="hero__ridge" viewBox="0 0 400 96" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 74 L42 44 L72 58 L112 28 L152 54 L192 30 L232 50 L272 24 L312 48 L352 36 L400 62 L400 96 L0 96 Z" fill="rgba(233,237,228,0.16)"/>
+      <path d="M0 84 L50 64 L92 74 L132 56 L176 72 L216 59 L262 76 L302 61 L346 74 L400 67 L400 96 L0 96 Z" fill="#E9EDE4"/>
+    </svg>
+  </section>
+
+  <div class="toolbar" id="toolbar">
+    <div class="toolbar__row">
+      <button class="icon-btn" id="searchOpen" type="button" aria-label="Search the menu">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="6"/><path d="M13.5 13.5 L17 17"/></svg>
+      </button>
+
+      <div class="chips" id="chips" role="group" aria-label="Filter by section"></div>
+
+      <button class="icon-btn icon-btn--filter" id="filterOpen" type="button" aria-haspopup="dialog" aria-expanded="false" aria-label="Dietary filters">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14M6 10h8M8.5 15h3"/></svg>
+        <span class="icon-btn__badge" id="filterBadge" hidden></span>
+      </button>
+    </div>
+
+    <div class="toolbar__search" id="searchWrap" hidden>
+      <svg class="toolbar__search-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="6"/><path d="M13.5 13.5 L17 17"/></svg>
+      <input class="toolbar__input" id="search" type="search" placeholder="Search dal bhat, tea, momo…" autocomplete="off" aria-label="Search the menu">
+      <button class="toolbar__close" id="searchClose" type="button">Done</button>
+    </div>
+  </div>
+
+  <p class="resultbar" id="resultbar" hidden></p>
+
+  <section class="featured" id="featured" hidden>
+    <h2 class="featured__title">What we are known for</h2>
+    <div class="featured__scroller" id="featuredScroller"></div>
+  </section>
+
+  <main id="menu">
+    <p class="state" id="state">Loading the menu…</p>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__note" id="footerNote"></p>
+    <a class="footer__link" href="about.html">About the lodge</a>
+  </footer>
+
+</div>
+
+<!-- Sticky bar that appears once something is in the order -->
+<div class="orderbar" id="orderbar" hidden>
+  <div class="orderbar__info">
+    <p class="orderbar__count" id="orderCount"></p>
+    <p class="orderbar__total" id="orderTotal"></p>
+  </div>
+  <button class="orderbar__btn" id="openBasket" type="button">Review order</button>
+</div>
+
+<!-- Basket -->
+<div class="screen" id="basketScreen" hidden role="dialog" aria-modal="true" aria-labelledby="basketTitle">
+  <header class="screen__head">
+    <h2 class="screen__title" id="basketTitle">Your order</h2>
+    <button class="screen__close" id="basketClose" type="button" aria-label="Back to the menu">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg>
+    </button>
+  </header>
+
+  <div class="screen__body">
+    <div id="basketList"></div>
+
+    <label class="tablefield">
+      <span class="tablefield__label">Table or room number</span>
+      <input class="tablefield__input" id="tableNo" type="text" maxlength="14" placeholder="Optional" autocomplete="off">
+    </label>
+
+    <div class="totalrow">
+      <span>Total</span>
+      <span id="basketTotal"></span>
+    </div>
+
+    <p class="screen__fine">Nothing is sent to the kitchen. When you are ready, show the next screen to your server.</p>
+  </div>
+
+  <div class="screen__foot">
+    <button class="btn btn--ghost" id="clearOrder" type="button">Clear</button>
+    <button class="btn" id="showWaiter" type="button">Show to server</button>
+  </div>
+</div>
+
+<!-- Large, high-contrast summary held up for the server -->
+<div class="waiter" id="waiterScreen" hidden role="dialog" aria-modal="true" aria-label="Order summary for the server">
+  <div class="waiter__scroll">
+    <header class="waiter__head">
+      <p class="waiter__lodge">Annapurna Eco Lodge Resort</p>
+      <p class="waiter__table" id="waiterTable"></p>
+    </header>
+    <div id="waiterList"></div>
+    <div class="waiter__total">
+      <span>Total</span>
+      <span id="waiterTotal"></span>
+    </div>
+    <p class="waiter__time" id="waiterTime"></p>
+    <div class="waiter__spacer"></div>
+  </div>
+  <button class="waiter__done" id="waiterDone" type="button">Done</button>
+</div>
+
+<button class="totop" id="toTop" type="button" hidden aria-label="Back to top">
+  <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 16V5M5 10l5-5 5 5"/></svg>
+</button>
+
+<div class="sheet-backdrop" id="sheetBackdrop" hidden></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" hidden>
+  <div class="sheet__handle" aria-hidden="true"></div>
+  <h2 class="sheet__title" id="sheetTitle">Dietary filters</h2>
+  <p class="sheet__sub">Show only dishes that match.</p>
+  <div class="sheet__options" id="dietOptions"></div>
+  <div class="sheet__actions">
+    <button class="btn btn--ghost" id="dietClear" type="button">Clear</button>
+    <button class="btn" id="sheetDone" type="button">Show dishes</button>
+  </div>
+</div>
+
+<script src="js/app.js" defer></script>
+</body>
+</html>
